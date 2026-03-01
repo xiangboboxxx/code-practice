@@ -50,6 +50,26 @@
 
 矩阵的第一行和第一列，位置即信息
 
+#### 240_搜索二维矩阵
+
+二分查找：对每一行进行二分查找O(logn)s
+
+二分区间为左闭右闭的[left,right],传入的初值为[0,n-1]
+
+min为left和right的中点
+
+while(left<=right) 当left>right时没有办法形成闭区间
+
+if(A[mid]>x):right=mid-1;[left,mid-1]
+
+if(A[mid]<x):left=mid+1;[mid+1,right]
+
+
+
+
+
+
+
 
 
 ### 子串
@@ -76,4 +96,3 @@
 - 移动零：必须保持非零元素相对顺序
 - 
 
-[.\189_轮转数组]: 
